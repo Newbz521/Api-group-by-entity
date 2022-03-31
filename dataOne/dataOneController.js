@@ -28,8 +28,8 @@ export const getDataOne = async (req, res) => {
 
 export const getDataByProfession = async (req, res) => {
   try {
-    const { profession } = req.params;
-    const dataOne = await DataOne.findOne({Occupation: "profession" })/*.populate("")*/;
+    const { id } = req.params;
+    const dataOne = await DataOne.find({ 'Occupation': { $regex: id, $options: 'i' } }).exec();
 
     if (dataOne) {
       return res.json(dataOne);
