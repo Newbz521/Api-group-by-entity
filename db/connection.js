@@ -2,7 +2,8 @@ import mongoose from "mongoose";
 
 const DATABASE_NAME = 'prj5'
 let mongooseConfig = { useNewUrlParser: true, useUnifiedTopology: true }
-
+let connectionString =
+process.env.DB_URL || `mongodb://127.0.0.1:27017/${DATABASE_NAME}`;
 
 // Uncomment to debug Mongoose queries
 mongoose.set('debug', true)
@@ -12,7 +13,7 @@ mongoose.set("returnOriginal", false);
 
 // Setup connection for MongoDB
 mongoose
-  .connect(`mongodb://127.0.0.1:27017/${DATABASE_NAME}`, mongooseConfig)
+  .connect(connectionString, mongooseConfig)
   .catch((error) =>
   console.error("Error connecting to MongoDB: ", error.message)
 );

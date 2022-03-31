@@ -1,5 +1,32 @@
 [
 {
-  "name" : "Jacky Chan"
+  "name" : "Jackie Chan",
+  "species": "Human",
+  "role": "actor",
+  "style": "freestyle"
+},
+{
+  "name" : "Bruce Lee",
+  "species": "Human",
+  "role": "actor",
+  "style": "Jit Kun Do"
+},
+{
+  "name" : "Donnie Yen",
+  "species": "Human",
+  "role": "actor",
+  "style": "wing chun"
+},
+{
+  "name" : "Chuck Norris",
+  "species": "Human",
+  "role": "actor",
+  "style": ""
+},
+{
+  "name" : "Jet Li",
+  "species": "Human",
+  "role": "actor",
+  "style": "wushu"
 }
 ]
