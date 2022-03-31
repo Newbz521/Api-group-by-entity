@@ -56,8 +56,8 @@ let DataOne = new Schema({
    "Washington": { type: Number },
    "West Virginia": { type: Number },
    "Wisconsin": { type: Number },
-   "Wyoming": 4840
-  __v: { type: Number },
+   "Wyoming": {type: Number},
+  __v: { type: Number }
 });
 
 export default mongoose.model("dataOne", DataOne);
