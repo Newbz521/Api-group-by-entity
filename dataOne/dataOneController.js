@@ -26,6 +26,22 @@ export const getDataOne = async (req, res) => {
   }
 };
 
+export const getDataByProfession = async (req, res) => {
+  try {
+    const { profession } = req.params;
+    const dataOne = await DataOne.findOne({Occupation: "profession" })/*.populate("")*/;
+
+    if (dataOne) {
+      return res.json(dataOne);
+    }
+
+    res.status(400).json({ message: "DataOne not found!" });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
 export const createDataOne = async (req, res) => {
   try {
     const dataOne = new DataOne(req.body);

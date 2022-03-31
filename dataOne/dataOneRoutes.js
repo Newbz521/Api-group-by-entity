@@ -4,10 +4,11 @@ import * as controllers from "./dataOneController.js";
 
 const router = Router();
 
-router.get("/dataones", controllers.getDataOnes);
-router.get("/dataones/:id", controllers.getDataOne);
-router.post("/dataones", controllers.createDataOne);
-router.put("/dataones/:id", controllers.updateDataOne);
-router.delete("/dataones/:id", controllers.deleteDataOne);
+router.get("/automations", controllers.getDataOnes);
+router.get("/automations/:id", controllers.getDataOne);
+router.get("/automations/:profession", controllers.getDataByProfession);
+router.post("/automations", controllers.createDataOne);
+router.put("/automations/:id", controllers.updateDataOne);
+router.delete("/automations/:id", controllers.deleteDataOne);
 
 export default router;
