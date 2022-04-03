@@ -3,13 +3,13 @@ import routes from "./index.js";
 
 import express from "express";
 
-
 const app = express();
 const PORT = process.env.PORT || 9000;
 
 app.use(express.json());
 
-app.use("/api", routes);
+// Establish root
+app.use("/", routes);
 
 db.on("connected", () => {
   console.clear();
