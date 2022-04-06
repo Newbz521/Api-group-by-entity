@@ -8,6 +8,11 @@ Rest API seeded with 2022's probability of occupations being replaced by automat
 * MongoDB
 * Express
 
+## Installation
+1) npm install
+2) npm run db:seed
+3) npm start
+
 ## Available Routes
 
 ### Get
