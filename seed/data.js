@@ -6,7 +6,7 @@ import dataOne from "../dataOne/dataOne.json" assert { type: "json" };
 
 const insertData = async () => {
   // reset database
-  db.dropDatabase();
+  await db.dropDatabase();
 
   // insert dataOne into database
   await DataOne.insertMany(dataOne);
