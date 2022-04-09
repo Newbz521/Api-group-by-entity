@@ -9,9 +9,11 @@ Rest API seeded with 2022's probability of occupations being replaced by automat
 * Express
 
 ## Installation
-1) npm install
-2) npm run db:seed
-3) npm start
+1) nvm install 16.14.2
+2) nvm use 16.14.2
+3) npm install
+4) npm run db:seed
+5) npm start
 
 ## Available Routes
 
