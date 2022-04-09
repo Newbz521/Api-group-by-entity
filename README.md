@@ -20,6 +20,8 @@ Rest API seeded with 2022's probability of occupations being replaced by automat
 
 ## Available Routes
 
+### http://localhost:9000/
+
 ### Get
 
 - /automations  
