@@ -31,6 +31,7 @@ Rest API seeded with 2022's probability of occupations being replaced by automat
   (Response: all available occupations)
 - /automations/occupation/:id  
   (Response: Search for profession with partial string)
+  ex: http://localhost:9000/automations/occupation/accountant
 - /automations/:id
 
 ### Post
