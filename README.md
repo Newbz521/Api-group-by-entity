@@ -22,6 +22,8 @@ Rest API seeded with 2022's probability of occupations being replaced by automat
 
 ### http://localhost:9000/
 
+### https://automationreplaceapi.herokuapp.com/
+
 ### Get
 
 - /automations  
