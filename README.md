@@ -33,7 +33,7 @@ Rest API seeded with 2022's probability of occupations being replaced by automat
   (Response: all available occupations)
 - /automations/occupation/:id  
   (Response: Search for profession with partial string)
-  ex: https://automationreplaceapi.herokuapp.com//automations/occupation/accountant
+  ex: https://automationreplaceapi.herokuapp.com/automations/occupation/accountant
 - /automations/:id
 
 ### Post
